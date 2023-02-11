@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+// import {
+//   BrowserRouter,
+//   Route,
+//   Routes
+// } from 'react-router-dom'
 import './App.css';
+import Test from './components/Test';
+import migra_mind from './img/migra_mind.png';
+
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={migra_mind} className="" alt="" />
         <p>
-          Let's do it!
+          Let's code it!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Psychosocial Resources - MigraCode
-        </a>
       </header>
-    </div>
+      <Test />
+  </div>
   );
 }
 
