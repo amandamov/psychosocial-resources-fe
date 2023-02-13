@@ -7,7 +7,7 @@ const Test = () => {
   }]);
 
     const handleTest = () => {
-      fetch('http://localhost:5000')
+      fetch('http://localhost:5000/names')
       .then((response) => response.json())
       .then(data => {
         console.log(data)
