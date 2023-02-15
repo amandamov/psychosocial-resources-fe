@@ -8,8 +8,7 @@ import Test from './components/Test';
 import migra_mind from './img/migra_mind.png';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigationbar from './components/Navigationbar';
-
-
+import RenderEventCard from './components/RenderEventCard';
 
 function App() {
 
@@ -23,6 +22,7 @@ function App() {
         </p>
       </header>
       <Test />
+      <RenderEventCard />
   </div>
   );
 }
