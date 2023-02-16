@@ -39,8 +39,7 @@
   cursor: pointer;
   transition: transform 200ms ease-in;
   width: 70%;
-  margin: auto;
-  margin-bottom: 5%;
+  margin: 5% auto 5% auto;
 }
 
 .card_body > img {
@@ -49,12 +48,19 @@
   object-fit: cover;
 }
 
-.card_body > card_title {
+.card_title {
   padding: 1rem;
 }
 
-.card_body > card_info {
+.card_info {
   padding: 0 1rem;
+  font-style: italic;
+}
+
+.date_time{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .card_button {

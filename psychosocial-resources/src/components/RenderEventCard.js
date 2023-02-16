@@ -1,25 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";
-import event1 from '../img/event1.png';
-import event2 from '../img/event2.png';
-import event3 from '../img/event3.png';
+import event from '../img/event.png';
 
 const RenderEventCard = () => {
 
+    const [infoEvent, setInfoEvent] = useState([]);
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/faketable2`)
+        .then((result) => result.json())
+        .then((data) => {
+          setInfoEvent(data);
+        });
+    }, []);
+
     return(
         <div className="">
-            <EventCard 
-                img={event1}
-                title="First Event"
-                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-            <EventCard 
-                img={event2}
-                title="Second Event"
-                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-            <EventCard 
-                img={event3}
-                title="Third Event"
-                info="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+            {infoEvent.map(item => {
+                return(
+                <EventCard key={item.id} 
+                img={event}
+                title={item.title}
+                name={item.name}
+                description={item.description}
+                date={item.date_event}
+                time={item.hour_event}
+                />)
+            })}
         </div>
     );
 };
