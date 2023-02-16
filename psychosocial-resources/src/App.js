@@ -15,13 +15,7 @@ function App() {
   return (
     <div className="App">
       < Navigationbar />
-      <header className="App-header">
-        <img src={migra_mind} className="" alt="" />
-        <p>
-          Let's code it!
-        </p>
-      </header>
-      <Test />
+      {/* <Test /> */}
       <RenderEventCard />
   </div>
   );
