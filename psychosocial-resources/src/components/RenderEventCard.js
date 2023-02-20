@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";
 import event from '../img/event.png';
+import './../App.css';
 
 const RenderEventCard = () => {
 
