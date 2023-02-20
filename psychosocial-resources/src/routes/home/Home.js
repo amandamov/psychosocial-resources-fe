@@ -3,6 +3,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom'
 import Events from "../events/Events";
 import Layout from '../layout/Layout';
 import Migramind from '../../img/migra_mind.png';
+import './Home.css'
 
 
 const Home = () => {
@@ -15,9 +16,9 @@ const Home = () => {
     return (
         <div>
             <Navigationbar />
-            <div>
+            <div className='home'>
                 <h1>
-                    This will be our Home
+                    This will be our Home page
                 </h1>
                 <img src={Migramind} />
             </div>
