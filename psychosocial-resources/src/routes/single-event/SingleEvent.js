@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+
 
 const SingleEvent = () => {
     
     const [moreInfo, setMoreInfo] = useState([]);
-   
+    const eventId = useParams();
+
     useEffect(()=> {
-        if('http://localhost:3000/events:1'){
-            fetch(`http://localhost:5000/faketable2/1`)
-            .then((result) => result.json())
-            .then((data) => {
-            setMoreInfo(data);
-            });
-        }
+        fetch(`http://localhost:5000/faketable2/${eventId.id}`)
+        .then((result) => result.json())
+        .then((data) => {
+        setMoreInfo(data);
+        });
     }, []);
 
     return (
@@ -33,6 +34,7 @@ const SingleEvent = () => {
                         </div>
                         ) 
             })}
+        
         </div>
     );
 }

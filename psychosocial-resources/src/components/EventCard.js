@@ -8,7 +8,7 @@ const EventCard = (props) => {
 
     const navigateToSingleEvent = () => {
         // navigate(`:${props.id}`)
-        navigate(`:1`)
+        navigate('/events/4')
     }
 
     return (
