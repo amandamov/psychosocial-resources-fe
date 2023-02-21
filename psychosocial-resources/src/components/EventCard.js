@@ -26,8 +26,6 @@ const EventCard = (props) => {
             <button className="card_button" onClick={navigateToSingleEvent}>
                 More info
             </button>
-            {/* <MoreInfoButton 
-                onClick={navigateToSingleEvent(props.id)}/> */}
         </div>
     )
 }
