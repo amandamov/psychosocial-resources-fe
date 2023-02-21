@@ -24,8 +24,9 @@ const RenderEventCard = () => {
                 title={item.title}
                 name={item.name}
                 description={item.description}
-                date={item.date_event}
+                date={item.to_char}
                 time={item.hour_event}
+                // id={item.id}
                 />)
             })}
         </div>
