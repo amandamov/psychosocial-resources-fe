@@ -5,6 +5,7 @@ import Navigationbar from "../../components/Navigationbar";
 const Layout = () => {
   return (
     <>
+      <Navigationbar />
       <Outlet />
     </>
   );
