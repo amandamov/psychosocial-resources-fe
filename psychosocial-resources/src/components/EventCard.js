@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
+import moment from 'moment';
 
 const EventCard = (props) => {
 
@@ -9,6 +10,9 @@ const EventCard = (props) => {
     navigate(`${props.id}`)
     }
 
+    const dateFormatDb = props.date;
+    const dateFormated = moment(dateFormatDb).format('DD/MM/YYYY');
+
     return (
         <div className="card_event" key={props.id}>
             <div className="card_body">
@@ -17,7 +21,7 @@ const EventCard = (props) => {
                 <h1 className="card_title">{props.name}</h1>
                 <div className="city_date_time">
                     <h1>{props.city}</h1>
-                    <p>{props.date} - {props.time}</p>
+                    <p>{dateFormated} - {props.time}</p>
                 </div>
             </div>
             <button className="card_button" onClick={() => navigateToSingleEvent(props.id)}>
