@@ -23,7 +23,7 @@ const RenderEventCard = () => {
                 img={event}
                 title={item.title}
                 name={item.name}
-                description={item.description}
+                city={item.city}
                 date={item.to_char}
                 time={item.hour_event}
                 id={item.id}
