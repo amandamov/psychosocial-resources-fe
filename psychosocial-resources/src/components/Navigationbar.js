@@ -9,7 +9,7 @@ function Navigationbar() {
       <Navbar
       collapseOnSelect
       expand="sm"
-      bg="dark"
+      bg = "dark"
       variant="dark"
     >
       <Navbar.Brand>
