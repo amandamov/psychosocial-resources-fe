@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import './SingleEvent.css';
 
 
 const SingleEvent = () => {
@@ -16,7 +17,7 @@ const SingleEvent = () => {
     }, []);
 
     return (
-        <div>
+        <div className="big-div">
             <h1>Page to show more information about a single event</h1>
             {moreInfo.map(item => {
                     return( 

@@ -1,6 +1,4 @@
-import { Route, Routes, useNavigate } from 'react-router-dom'
-import Events from "../events/Events";
-import Layout from '../layout/Layout';
+import { useNavigate } from 'react-router-dom'
 import Migramind from '../../img/migra_mind.png';
 import './Home.css'
 import Header from '../../components/Header';
