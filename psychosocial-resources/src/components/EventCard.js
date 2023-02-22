@@ -1,14 +1,12 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import MoreInfoButton from "./MoreInfoButton";
 
 const EventCard = (props) => {
 
     const navigate = useNavigate();
 
     const navigateToSingleEvent = () => {
-        // navigate(`:${props.id}`)
-        navigate('/events/4')
+    navigate(`${props.id}`)
     }
 
     return (
@@ -23,7 +21,7 @@ const EventCard = (props) => {
                     <p>{props.time}</p>
                 </div>
             </div>
-            <button className="card_button" onClick={navigateToSingleEvent}>
+            <button className="card_button" onClick={() => navigateToSingleEvent(props.id)}>
                 More info
             </button>
         </div>
