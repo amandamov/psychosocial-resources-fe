@@ -8,12 +8,6 @@
   pointer-events: none;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .navbar {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -53,28 +47,24 @@
   text-align: center;
 }
 
-.card_info {
-  padding: 0 1rem;
-  font-style: italic;
-}
-
-.date_time{
+.city_date_time {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
+}
+
+.city_date_time > p {
+  margin-bottom: 0;
 }
 
 .card_button {
   padding: 1rem;
   margin: 1rem;
-  border: 3px solid #61dafb;
+  border: 3px solid #a2D6E8;
   background: transparent;
-  color: #61dafb;
+  color: #a2D6E8;
   border-radius: 5%;
-}
-
-.test-button {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

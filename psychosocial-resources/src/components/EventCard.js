@@ -15,10 +15,9 @@ const EventCard = (props) => {
                 <img src={props.img}></img>
                 <h2 className="card_title">{props.title}</h2>
                 <h1 className="card_title">{props.name}</h1>
-                <p className="card_info">{props.description}</p>
-                <div className="date_time">
-                    <p>{props.date}</p>
-                    <p>{props.time}</p>
+                <div className="city_date_time">
+                    <h1>{props.city}</h1>
+                    <p>{props.date} - {props.time}</p>
                 </div>
             </div>
             <button className="card_button" onClick={() => navigateToSingleEvent(props.id)}>
