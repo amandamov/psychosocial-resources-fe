@@ -103,9 +103,14 @@
 }
 
 .row{
-	display: flex;
-	flex-wrap: nowrap;
-  padding: 70px 0;
+	display:inline-flex;
+	flex-wrap: wrap;
+  padding: 20px 0;
+  flex-direction: row;
+  
+  
+  
+
 }
 
 ul{
