@@ -9,7 +9,7 @@ const SingleEvent = () => {
     const eventId = useParams();
 
     useEffect(()=> {
-        fetch(`http://localhost:5000/faketable2/${eventId.id}`)
+        fetch(`http://localhost:5000/tableOcc/${eventId.id}`)
         .then((result) => result.json())
         .then((data) => {
         setMoreInfo(data);
@@ -22,16 +22,14 @@ const SingleEvent = () => {
             {moreInfo.map(item => {
                     return( 
                         <div key={item.id}>
-                            <h1>{item.name}</h1>
-                            <h2>{item.title}</h2>
-                            <p>{item.description}</p>
-                            <p>{item.address}</p>
-                            <p>{item.city}</p>
-                            <p>{item.country}</p>
-                            <p>{item.date}</p>
-                            <p>{item.to_char}</p>
-                            <p>{item.hour_event}</p>
-                            <p>{item.links}</p>
+                            <h1>{item.institute_or_company}</h1>
+                            <h2>{item.event_title}</h2>
+                            <p>{item.information_1}</p>
+                            {/* <p>{item.address}</p> */}
+                            <p>{item.provincie}</p>
+                            <p>{item.date_information}</p>
+                            <p>{item.hour_informacion}</p>
+                            <p>{item.foundation_page}</p>
                         </div>
                         ) 
             })}
