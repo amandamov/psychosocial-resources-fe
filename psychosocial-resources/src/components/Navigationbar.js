@@ -9,8 +9,8 @@ function Navigationbar() {
       <Navbar
       collapseOnSelect
       expand="sm"
-      bg = "dark"
-      variant="dark"
+      variant="light"
+      className="color-nav"
     >
       <Navbar.Brand>
         <img src={migramind_sm} width="30" heigth="30"/>
