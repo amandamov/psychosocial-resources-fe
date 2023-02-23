@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css"
+import "../App.css"
 
 function Footer() {
   return (
@@ -38,7 +38,7 @@ function Footer() {
          //</div>
      //</div>
 
-     <div className="container">
+     <div className="container-footer">
   	 	<div className="row">
   	 		<div className="footer-col">
   	 			<h4>company</h4>
