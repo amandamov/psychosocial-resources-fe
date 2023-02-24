@@ -18,7 +18,7 @@ const SingleEvent = () => {
 
     return (
         <div className="big-div">
-            <h1>Page to show more information about a single event</h1>
+            {/* <h1>Page to show more information about a single event</h1> */}
             {moreInfo.map(item => {
                     return( 
                         <div key={item.id}>

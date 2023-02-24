@@ -1,0 +1,8 @@
+.img-migracode {
+    padding: 8%;
+}
+
+.img-migracode > img {
+    max-width: 100%;
+}
+
