@@ -18,10 +18,9 @@ function Navigationbar() {
       <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav className="me-auto my-2 my-lg-0">
-          <Nav.Link>Home</Nav.Link>
-          <Nav.Link>Events</Nav.Link>
-          <Nav.Link>News</Nav.Link>
-          <Nav.Link>About us</Nav.Link>
+          <Nav.Link href="/" >Home</Nav.Link>
+          <Nav.Link href="/events">Events</Nav.Link>
+          <Nav.Link href="/about">About us</Nav.Link>
         </Nav>
         <Form className="d-flex">
                   <Form.Control
