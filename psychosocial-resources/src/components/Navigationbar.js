@@ -12,7 +12,7 @@ function Navigationbar() {
       variant="light"
       className="color-nav"
     >
-      <Navbar.Brand>
+      <Navbar.Brand href="/">
         <img src={migramind_sm} width="30" heigth="30"/>
         MigraMind</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />

@@ -24,8 +24,8 @@ const RenderEventCard = () => {
                 title={item.event_title}
                 name={item.institute_or_company}
                 city={item.provincie}
-                date={item.date_informacion}
-                time={item.hour_informacion}
+                // date={item.date_informacion}
+                // time={item.hour_informacion}
                 id={item.id}
                 />)
             })}
