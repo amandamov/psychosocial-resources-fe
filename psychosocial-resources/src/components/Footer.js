@@ -3,65 +3,36 @@ import "../App.css"
 
 function Footer() {
   return (
-      //<div className="main-footer">
-        // <div>
-            //<div>
-                //{/* Column1 */}
-                //<div>
-                    //<h4>MigraMind</h4>
-                    //<ul>
-                        //<li>Telephone xxx-xxx-xxx</li>
-                        //<li>Spain, Barcelona</li>
-                        //<li>Calle Rods de Ross 12</li>
-                    //</ul>
-                //</div>
-                //{/* Column2 */}
-                //<div>
-                    //<h4>Stuff</h4>
-                    //<ul>
-                        //<li>About us</li>
-                        //<li>News</li>
-                        //<li>Events</li>
-                    //</ul>
-                //</div>
-                //{/* Column3 */}
-                //<div>
-                    //<h4>Follow us</h4>
-                    //<ul>
-                        //<li>Facebook</li>
-                        //<li>linkedin</li>
-                        //<li>Instagram</li>
-                        //<li>Twitter</li>
-                    //</ul>
-                //</div>
-            //</div>
-         //</div>
-     //</div>
-
      <div className="container-footer">
-  	 	<div className="row">
+  	 	<div className="row" style={{
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "nowrap",
+    justifyContent: "center",
+    width: "18%",
+}}>
   	 		<div className="footer-col">
-  	 			<h4>company</h4>
+  	 			<h4>The team</h4>
   	 			<ul>
-  	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our services</a></li>
-  	 				<li><a href="#">affiliate program</a></li>
+  	 				<li><a href="#">About us</a></li>
+  	 				<li><a href="#">Our program</a></li>
+  	 				<li><a href="#">Support us</a></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
-  	 			<h4>get help</h4>
+  	 			<h4>Info</h4>
   	 			<ul>
-  	 				<li><a href="#">FAQ</a></li>
-  	 				<li><a href="#">shipping</a></li>
-  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">Events</a></li>
+  	 				<li><a href="#">News</a></li>
+  	 				<li><a href="#">Get help</a></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
-  	 			<h4>online shop</h4>
+  	 			<h4>Contact Us</h4>
   	 			<ul>
-  	 				<li><a href="#">watch</a></li>
-  	 				<li><a href="#">bag</a></li>
-  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#"><i class="fab fa-whatsapp"></i> +3212434355</a></li>
+  	 				<li><a href="#">Email: migramind@hotmail.com</a></li>
+  	 				<li><a href="#">Address: Calle fetyt 56, Barcelona</a></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
