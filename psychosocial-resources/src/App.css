@@ -19,9 +19,10 @@
 }
 
 /*Header css start here*/
-.header_img{
-  display: block;
+.header_img {
+  height: 50px;
 }
+
 .App-header {
   background-color: #eff2f9;
   min-height: 100vh;
