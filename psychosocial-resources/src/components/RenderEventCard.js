@@ -8,7 +8,7 @@ const RenderEventCard = () => {
     const [infoEvent, setInfoEvent] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/TableOcc`)
+        fetch(`http://localhost:5001/TableOcc`)
         .then((result) => result.json())
         .then((data) => {
           setInfoEvent(data);
