@@ -6,8 +6,11 @@ import imagen3 from "../img/psicolog.jpg";
 
 
 const Header = () => {
+
     return(
-    <Carousel fade className="header_img">
+    <div className="header_img">
+    <Carousel fade>
+      
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -30,6 +33,7 @@ const Header = () => {
         />
       </Carousel.Item>
     </Carousel>
+    </div>
     )
 }
 
