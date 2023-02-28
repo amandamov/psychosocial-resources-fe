@@ -18,6 +18,10 @@
   background-color: #a2dbef;
 }
 
+/*Header css start here*/
+.header_img{
+  display: block;
+}
 .App-header {
   background-color: #eff2f9;
   min-height: 100vh;
@@ -29,6 +33,13 @@
   color: #61dafb;
 }
 
+.card_card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
 .card_event {
   box-shadow: 0 1px 10px;
   border-radius: 1%;
@@ -37,7 +48,7 @@
   justify-content: space-between;
   cursor: pointer;
   transition: transform 200ms ease-in;
-  width: 70%;
+  width: 40%;
   margin: 5% auto 5% auto;
 }
 
@@ -96,7 +107,6 @@
 .container-footer{
 	max-width: 100%;
   background-color: #A2DBEF;
-  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
