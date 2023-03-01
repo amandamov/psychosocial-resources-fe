@@ -4,13 +4,7 @@ import "../App.css"
 function Footer() {
   return (
      <div className="container-footer">
-  	 	<div className="row" style={{
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "nowrap",
-    justifyContent: "center",
-    width: "18%",
-}}>
+  	 	<div className="row-footer" >
   	 		<div className="footer-col">
   	 			<h4>The team</h4>
   	 			<ul>
@@ -20,7 +14,7 @@ function Footer() {
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
-  	 			<h4>Info</h4>
+  	 			<h4>Get info</h4>
   	 			<ul>
   	 				<li><a href="#">Events</a></li>
   	 				<li><a href="#">News</a></li>
