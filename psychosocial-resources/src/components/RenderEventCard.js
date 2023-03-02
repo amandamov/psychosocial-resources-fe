@@ -8,7 +8,7 @@ const RenderEventCard = () => {
     const [infoEvent, setInfoEvent] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5001/TableOcc`)
+        fetch(`http://localhost:5001/getHelp`)
         .then((result) => result.json())
         .then((data) => {
           setInfoEvent(data);
@@ -21,8 +21,8 @@ const RenderEventCard = () => {
                 return(
                 <EventCard key={item.id} 
                 img={event}
-                title={item.event_title}
-                name={item.institute_or_company}
+                title={item.title}
+                name={item.Company}
                 city={item.provincie}
                 // date={item.date_informacion}
                 // time={item.hour_informacion}
