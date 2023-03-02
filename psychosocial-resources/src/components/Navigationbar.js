@@ -6,7 +6,7 @@ import migramind_sm from '../img/migramind_sm.png';
 
 function Navigationbar() {
   return (
-      <Navbar
+      <Navbar 
       collapseOnSelect
       expand="sm"
       variant="light"

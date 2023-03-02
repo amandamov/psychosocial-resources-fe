@@ -14,7 +14,7 @@ const EventCard = (props) => {
     // const dateFormated = moment(dateFormatDb).format('DD/MM/YYYY');
 
     return (
-        <div className="card_event" key={props.id}>
+        <div className="card_event col-md-5  " key={props.id}>
             <div className="card_body">
                 <img src={props.img}></img>
                 <h2 className="card_title">{props.title}</h2>
