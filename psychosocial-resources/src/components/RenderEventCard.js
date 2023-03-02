@@ -16,7 +16,8 @@ const RenderEventCard = () => {
     }, []);
 
     return(
-        <div className="card_card">
+        <div class=" p-4 w-100">
+        <div class=" row row-cols-1 row-cols-md-2  g-2">
             {infoEvent.map(item => {
                 return(
                 <EventCard key={item.id} 
@@ -29,6 +30,7 @@ const RenderEventCard = () => {
                 id={item.id}
                 />)
             })}
+        </div>
         </div>
     );
 };
