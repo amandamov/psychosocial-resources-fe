@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import imagen1 from "../img/ayuntamiento.jpg";
-import imagen2 from "../img/barcelona.jpg";
-import imagen3 from "../img/psicolog.jpg";
+import imagen1 from "../img/migra-1.png";
+import imagen2 from "../img/migra-4.png";
+import imagen3 from "../img/migra-3.png";
 
 
 const Header = () => {
