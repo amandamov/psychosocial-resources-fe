@@ -23,13 +23,13 @@ function Navigationbar() {
           <Nav.Link href="/about">About us</Nav.Link>
         </Nav>
         <Form className="d-flex">
-                  <Form.Control
+                  <Form.Control 
                     type="search"
                     placeholder="Search"
                     className="me-2"
                     aria-label="Search"
                   />
-                  <button variant="outline-success">Search</button>
+                  <button variant="outline-success" >Search</button>
                 </Form>
       </Navbar.Collapse>
     </Navbar>
