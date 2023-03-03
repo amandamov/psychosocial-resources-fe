@@ -28,6 +28,10 @@ const Header = () => {
           src={imagen2}
           alt="Second slide"
         />
+        <Carousel.Caption className="description_img1">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -35,6 +39,10 @@ const Header = () => {
           src={imagen3}
           alt="Third slide"
         />
+        <Carousel.Caption className="description_img1">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+           </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
     </div>
