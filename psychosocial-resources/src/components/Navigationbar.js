@@ -1,7 +1,8 @@
 import React from "react";
 import { Nav, Navbar, NavLink } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
-import migramind_sm from '../img/migramind_tp.png';
+import migramind_sm from '../img/MigraMind1.png';
+import Search from '../img/Search.png';
 
 
 function Navigationbar() {
@@ -13,7 +14,7 @@ function Navigationbar() {
       className="color-nav"
     >
       <Navbar.Brand href="/">
-        <img src={migramind_sm} width="40" heigth="30"/>
+        <img src={migramind_sm} width="50" heigth="30"/>
         MigraMind</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
@@ -29,7 +30,7 @@ function Navigationbar() {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <button variant="outline-success">Search</button>
+                  <button className="search-button" variant="outline-success"><img src={Search} width="30" heigth="10"/></button>
                 </Form>
       </Navbar.Collapse>
     </Navbar>
