@@ -18,8 +18,8 @@ const Header = () => {
           alt="First slide"
         />
         <Carousel.Caption className="description_img1">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Psychological Information</h3>
+          <p>It may be that your crisis is an open window to a new opportunity ... Look for it! </p>
            </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -29,8 +29,8 @@ const Header = () => {
           alt="Second slide"
         />
         <Carousel.Caption className="description_img1">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>"If you're worried enough about a result, you'll probably do something to fix it"</h3>
+          <p>William James</p>
            </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -40,8 +40,8 @@ const Header = () => {
           alt="Third slide"
         />
         <Carousel.Caption className="description_img1">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>"Life is a succession of lessons that must be lived to be understood"</h3>
+          <p>Helen Keller</p>
            </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
