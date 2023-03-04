@@ -21,6 +21,7 @@ const SingleEvent = () => {
             {moreInfo.map(item => {
                     return( 
                         <div key={item.id}>
+                            <img src={item.code_photo}/>
                             <h1>{item.company}</h1>
                             <h2>{item.title}</h2>
                             <h3>{item.description}</h3>
@@ -33,6 +34,7 @@ const SingleEvent = () => {
                             <p>{item.email}</p>
                             <p>{item.phone}</p>
                             <p>{item.type_of_company}</p>
+                            <p>{item.attencion_schedule}</p>
                         </div>
                         ) 
             })}

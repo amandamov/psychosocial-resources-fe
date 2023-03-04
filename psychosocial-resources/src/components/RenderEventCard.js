@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";
-import event from '../img/event.png';
 import './../App.css';
 import imagen6 from "../img/salud_mental.jpg";
 
@@ -28,12 +27,10 @@ const RenderEventCard = () => {
             {infoEvent.map(item => {
                 return(
                 <EventCard key={item.id} 
-                img={event}
+                img={item.code_photo}
                 title={item.title}
-                name={item.Company}
+                name={item.company}
                 city={item.provincie}
-                // date={item.date_informacion}
-                // time={item.hour_informacion}
                 id={item.id}
                 />)
             })}
