@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";
 import event from '../img/event.png';
 import './../App.css';
+import imagen6 from "../img/salud_mental.jpg";
 
 const RenderEventCard = () => {
 
@@ -16,6 +17,12 @@ const RenderEventCard = () => {
     }, []);
 
     return(
+        <div><img
+          className="d-block w-100"
+          src={imagen6}
+          alt="First slide"
+        />
+        
         <div class=" p-4 w-100">
         <div class=" row row-cols-1 row-cols-md-2  g-2">
             {infoEvent.map(item => {
@@ -30,6 +37,7 @@ const RenderEventCard = () => {
                 id={item.id}
                 />)
             })}
+            </div>
         </div>
         </div>
     );
