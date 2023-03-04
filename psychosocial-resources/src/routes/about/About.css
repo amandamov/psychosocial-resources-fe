@@ -6,3 +6,7 @@
     max-width: 100%;
 }
 
+#texto {
+    display: inline-block;
+    vertical-align: top;
+}
