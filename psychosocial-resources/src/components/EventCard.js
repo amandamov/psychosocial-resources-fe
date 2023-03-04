@@ -16,12 +16,13 @@ const EventCard = (props) => {
     return (
         <div className="card_event col-md-5  " key={props.id}>
             <div className="card_body">
-                <img src={props.img}></img>
+                <div class="card-text">
                 <h2 className="card_title">{props.title}</h2>
                 <h1 className="card_title">{props.name}</h1>
                 <div className="city_date_time">
                     <h2>{props.city}</h2>
                     {/* <p>{dateFormated} - {props.time}</p> */}
+                </div>
                 </div>
             </div>
             <button className="card_button" onClick={() => navigateToSingleEvent(props.id)}>

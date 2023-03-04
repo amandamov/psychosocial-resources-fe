@@ -199,3 +199,13 @@ ul{
 }
 }
 
+/* RenderEvent CSS */
+.card_button {
+  padding: 1rem;
+  width: 112px;
+  margin: auto;
+  border: none;
+  background: #A2D6E8;
+  color: #FFFFFF;
+  border-radius: 500px;
+}
