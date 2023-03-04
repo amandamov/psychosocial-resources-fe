@@ -17,7 +17,7 @@ const RenderEventCard = () => {
     }, []);
 
     return(
-        <div><img class="img-fluid"
+        <div><img
           className="d-block w-100"
           src={imagen6}
           alt="First slide"
