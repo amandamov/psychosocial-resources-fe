@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar, NavLink } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
-import migramind_sm from '../img/migramind_sm.png';
+import migramind_sm from '../img/migramind_tp.png';
 
 
 function Navigationbar() {
@@ -13,7 +13,7 @@ function Navigationbar() {
       className="color-nav"
     >
       <Navbar.Brand href="/">
-        <img src={migramind_sm} width="30" heigth="30"/>
+        <img src={migramind_sm} width="40" heigth="30"/>
         MigraMind</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
