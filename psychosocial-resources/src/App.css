@@ -40,6 +40,16 @@
   color: #61dafb;
 }
 
+.me-2.form-control {
+  border-radius: 500px;
+}
+
+.search-button {
+  border-radius: 500px;
+  padding: 5px;
+  background: transparent;
+  border: none;
+}
 
 .card_event {
   box-shadow: 0 1px 10px;
