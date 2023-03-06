@@ -1,12 +1,42 @@
-.img-migracode {
-    padding: 2%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system;
 }
 
-.img-migracode > img {
-    max-width: 100%;
+.migracode > img {
+    max-width: 40%;
+    height: 100%;
 }
 
 #texto {
     display: inline-block;
     vertical-align: top;
+}
+
+.container-about {
+    margin: 5%;
+}
+
+.migracode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.migracode > h3 {
+    padding-left: 5%;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+@media(max-width: 896px) {
+    .migracode {
+        flex-direction: column;
+    }
+
+    .migracode > img {
+        max-width: 90%;
+    }
 }
