@@ -26,7 +26,7 @@ function Navigationbar() {
         <Form className="d-flex">
                   <Form.Control 
                     type="search"
-                    placeholder="Search"
+                    placeholder=""
                     className="me-2"
                     aria-label="Search"
                   />
