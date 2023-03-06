@@ -3,21 +3,12 @@ import "../App.css"
 import Union from "../img/EN-Funded by the EU-NEG.png";
 import Integrate from "../img/INTEgreat_white.png";
 
+
 function Footer() {
   return (
      <div className="container-footer">
-  	 	<div className="row" style={{
-			display: "flex",
-			flexDirection: "row",
-			flexWrap: "nowrap",
-			width: "18%",
-			alignContent: "center",
-			justifyContent: "center",
-			margin: "60px",
-			paddingLeft: "10px",
-			paddingRight: "0px",
-		}}>
-			<div>
+  	 	<div className="row-footer" >
+		   <div>
 				<img className="union-logo" src={Union} style={{width: "250px", height: "55px",}}/>
 				<img className="integrate-logo" src={Integrate} style={{width: "150px", height: "65px",}}/>
 			</div>
