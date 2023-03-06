@@ -1,5 +1,10 @@
 import Migracode from "../../img/migracode.png";
 import './About.css'
+import Amanda from "../../img/amanda.jpeg"
+import Elimar from "../../img/elimar.jpeg"
+import Laura from "../../img/laura.jpeg"
+import Avataro from "../../img/avataro.jpeg"
+import Portrait from "../../components/Portrait";
 
 const About = () => {
     return (
@@ -13,7 +18,11 @@ const About = () => {
                 </h3>
             </div>
             <div className="team">
-                
+                <Portrait photo={Amanda} name={"Amanda Oliveira"}/>
+                <Portrait photo={Elimar} name={"Elimar Finol"}/>
+                <Portrait photo={Laura} name={"Laura Garcia"}/>
+                <Portrait photo={Avataro} name={"Nuno Luis"}/>
+                <Portrait photo={Avataro} name={"Oswaldo Viloria"}/>
             </div>
         </div>
 
