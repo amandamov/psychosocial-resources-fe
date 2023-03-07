@@ -3,6 +3,7 @@ import './About.css'
 import Amanda from "../../img/amanda.jpeg"
 import Elimar from "../../img/elimar.jpeg"
 import Laura from "../../img/laura.jpeg"
+import Nuno from "../../img/nuno.jpeg"
 import Avataro from "../../img/avataro.jpeg"
 import Portrait from "../../components/Portrait";
 
@@ -21,7 +22,7 @@ const About = () => {
                 <Portrait photo={Amanda} name={"Amanda Oliveira"}/>
                 <Portrait photo={Elimar} name={"Elimar Finol"}/>
                 <Portrait photo={Laura} name={"Laura Garcia"}/>
-                <Portrait photo={Avataro} name={"Nuno Luis"}/>
+                <Portrait photo={Nuno} name={"Nuno Luis"}/>
                 <Portrait photo={Avataro} name={"Oswaldo Viloria"}/>
             </div>
         </div>
