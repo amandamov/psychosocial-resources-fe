@@ -21,6 +21,7 @@ function Navigationbar() {
         <Nav className="me-auto my-2 my-lg-0">
           <Nav.Link href="/" >Home</Nav.Link>
           <Nav.Link href="/events">Events</Nav.Link>
+          <Nav.Link href="/psychology">Psychology</Nav.Link>
           <Nav.Link href="/about">About us</Nav.Link>
         </Nav>
         <Form className="d-flex">
