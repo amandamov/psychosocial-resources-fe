@@ -11,6 +11,7 @@ import Layout from './routes/layout/Layout';
 import SingleEvent from './routes/single-event/SingleEvent';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Psychology from './routes/psychology/Psychology';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route index element={<Home />}/>
           <Route element={<Events />} path='events' />
           <Route element={<SingleEvent />} path='events/:id' />
+          <Route element={<Psychology/>} path='psychology' />
           <Route element={<About />} path='about' />
           {/* <Route element={<Team />} path='team' /> */}
         </Route>
