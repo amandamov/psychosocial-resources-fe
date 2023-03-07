@@ -8,12 +8,12 @@ const Psychology = () => {
                 <main className="main">
                     <img src={Psy} />
                     <div className="card-bottom">
-                        <div className='card'>
+                        <div className='card-main'>
                             <h3>this is the title 1</h3>
                             <p>this is the content 1</p>
                             <a href='#'>this is the link 1</a>
                         </div>
-                        <div className='card'>
+                        <div className='card-main'>
                             <h3>this is the title 2</h3>
                             <p>this is the content 2 this is the content 2 this is the content 2</p>
                             <a href='#'>this is the link 2</a>
