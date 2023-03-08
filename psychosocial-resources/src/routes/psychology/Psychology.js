@@ -21,9 +21,9 @@ const Psychology = () => {
                     </div>
                 </main>
                 <div className="sidebar">
-                    <h3 align="center">World psychology day</h3>
+                    <h3 align="center">Important information</h3>
                     <div className='card-side'>
-                        <h3>October 10th. World Mental Health Day (WHO)</h3>
+                        <h3 align="center">October 10th. World Mental Health Day (WHO)</h3>
                         <p>Its objectives are to raise awareness in society about mental disorders, fight against the stigmatization suffered by affected people and promote initiatives that improve care.</p>
                         <a target="blank" href='https://www.aquinoscuidamos.org/2021/09/18/guia-autocuidado/#:~:text=Actividades%20como%20cantar%2C%20bailar%2C%20tocar,y%20mejoran%20nuestra%20salud%20mental.'>More info</a>
                     </div>
