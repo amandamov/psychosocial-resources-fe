@@ -40,7 +40,7 @@ const Header = () => {
           alt="Third slide"
         />
         <Carousel.Caption className="description_img1">
-          <h3>"Life is a succession of lessons that must be lived to be understood"</h3>
+          <h3>"Life is a succession of lessons that must be lived to be understood</h3>
           <p>Helen Keller</p>
            </Carousel.Caption>
       </Carousel.Item>
