@@ -14,22 +14,22 @@ const EventCard = (props) => {
     // const dateFormated = moment(dateFormatDb).format('DD/MM/YYYY');
 
     return (
-        <div className="card_event col-md-5  " key={props.id}>
+        <><div className="card_event col-md-5" key={props.id}>
             <div className="card_body">
-                <div class="card-text">
-                <h2 className="card_title">{props.title}</h2>
-                <h1 className="card_title">{props.name}</h1>
+                <img className="card-img-top" src={props.img} alt="Card image cap"/>
+                <div className="card-text">
+                <h3 className="card_title">{props.name}</h3>
+                <hr className="hr" />
+                <h4 className="card_title">{props.title}</h4>
                 <div className="city_date_time">
-                    <h2>{props.city}</h2>
+                    <h2>{props.provincie} - {props.country}</h2>
                     {/* <p>{dateFormated} - {props.time}</p> */}
                 </div>
-                </div>
             </div>
-            <button className="card_button" onClick={() => navigateToSingleEvent(props.id)}>
-                More info
-            </button>
         </div>
-    )
+        <button class="ov-btn-grow-ellipse" onClick={() => navigateToSingleEvent(props.id)}>MORE INFO</button>
+        </div>
+    </>)
 }
 
 export default EventCard;
