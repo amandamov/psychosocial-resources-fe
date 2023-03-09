@@ -28,9 +28,11 @@ const RenderEventCard = () => {
                 return(
                 <EventCard key={item.id} 
                 img={item.code_photo}
-                title={item.title}
                 name={item.company}
-                city={item.provincie}
+                title={item.title}
+                provincie={item.provincie}
+                country={item.country}
+                //city={item.provincie}
                 id={item.id}
                 />)
             })}
