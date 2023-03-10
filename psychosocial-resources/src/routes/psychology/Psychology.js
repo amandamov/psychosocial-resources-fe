@@ -35,7 +35,7 @@ const Psychology = () => {
                     <div className='card-side'>
                         <h3 align="center">Do I need psychological help?</h3>
                         <p>People often tend to think that we have the key to open all doors, including those that are impossible to open.</p>
-                        <a target="blank" href="">More info</a>
+                        <a target="blank" href='https://cenitpsicologia.com/saber-necesito-ayuda-psicologica/'>More info</a>
                     </div>
                 </div>
             </div>
