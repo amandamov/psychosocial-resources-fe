@@ -17,7 +17,7 @@ const EventCard = (props) => {
         <><div className="card_event col-md-5" key={props.id}>
             <div className="card_body">
                 <img className="card-img-top" src={props.img} alt="Card image cap"/>
-                <div className="card-text">
+                <div className="card_text">
                 <h3 className="card_title">{props.name}</h3>
                 <hr className="hr" />
                 <h4 className="card_title">{props.title}</h4>
