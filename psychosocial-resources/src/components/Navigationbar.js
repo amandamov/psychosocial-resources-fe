@@ -1,11 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Nav, Navbar, NavLink } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 import migramind_sm from '../img/MigraMind1.png';
 import Search from '../img/Search.png';
 
-
 function Navigationbar() {
+
+  // const [searchEvent, setSearchEvent] = useState([]);
+  const [input, setInput] = useState("");
+
+  // useEffect(() => {
+  //     fetch(`http://localhost:5001/searchEvent`)
+  //     .then((result) => result.json())
+  //     .then((data) => {
+  //       setSearchEvent(data);
+  //     });
+  // }, []);
+
+  async function handleSubmit(event) {
+        event.preventDefault();
+        try {
+          const response = await fetch(`http://localhost:5001/searchEvent/?eventQuery=${input}`);
+
+          const parseResponse = await response.json();
+
+          console.log(parseResponse);
+        } catch (err) {
+          console.error(err);
+        }
+      }
+    
+  // function handleSearchInput(event) {
+  //   setSearchInput(event.target.value);
+  // }
+
+
   return (
       <Navbar 
       collapseOnSelect
@@ -24,12 +53,14 @@ function Navigationbar() {
           <Nav.Link href="/psychology">Psychology</Nav.Link>
           <Nav.Link href="/about">About us</Nav.Link>
         </Nav>
-        <Form className="d-flex">
+        <Form className="d-flex" onSubmit={handleSubmit}>
                   <Form.Control 
                     type="search"
                     placeholder=""
                     className="me-2"
                     aria-label="Search"
+                    value={input}
+                    onChange={e => {setInput(e.target.value)}}
                   />
                   <button className="search-button" variant="outline-success"><img src={Search} width="30" heigth="10"/></button>
                 </Form>
