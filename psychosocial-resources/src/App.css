@@ -19,6 +19,7 @@
 
 /*Header css start here*/
 
+
 .d-block{
   display: block;
     width: 100%;
@@ -62,6 +63,7 @@
   transition: transform 200ms ease-in;
   width: 40%;
   margin: 5% auto 5% auto;
+  padding: 10px;
 }
 
 .hr{
