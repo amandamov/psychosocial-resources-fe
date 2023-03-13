@@ -1,17 +1,21 @@
-import React, { useEffect, useState } from "react";
-import EventCard from "./EventCard";
-import './../App.css';
-import imagen6 from "../img/salud_mental.jpg";
+import { useState, useEffect } from "react";
+import EventCard from "../../components/EventCard";
+import imagen6 from "../../img/salud_mental.jpg";
+import { useParams } from "react-router-dom";
 
-const RenderEventCard = () => {
+const Results = () => {
 
-    const [infoEvent, setInfoEvent] = useState([]);
+    const [event, setEvent] = useState([]);
+    const input = useParams();
 
+    console.log(input)
+    // let inputFake = "barcelona"
+    
     useEffect(() => {
-        fetch(`http://localhost:5001/getHelp`)
+        fetch(`http://localhost:5001/searchEvent/?eventQuery=${input}`)
         .then((result) => result.json())
         .then((data) => {
-          setInfoEvent(data);
+            setEvent(data)
         });
     }, []);
 
@@ -22,9 +26,9 @@ const RenderEventCard = () => {
           alt="First slide"
         />
         
-        <div className=" p-4 w-100">
-        <div className=" row row-cols-1 row-cols-md-2  g-2">
-            {infoEvent.map(item => {
+        <div class=" p-4 w-100">
+        <div class=" row row-cols-1 row-cols-md-2  g-2">
+            {event.map(item => {
                 return(
                 <EventCard key={item.id} 
                 img={item.code_photo}
@@ -38,8 +42,9 @@ const RenderEventCard = () => {
             })}
             </div>
         </div>
+        <p>results page</p>
         </div>
     );
-};
+}
 
-export default RenderEventCard;
+export default Results;
