@@ -4,9 +4,10 @@ import './Psychology.css'
 const Psychology = () => {
     return(
         <div>
-            <div className="page">
-                <main className="main">
+            <div className="page" >
+                <main className="main" >
                     <img src={Psy} />
+                    <h3 align="center">Important information</h3>
                     <div className="card-bottom">
                         <div className='card-main'>
                             <h3 align="center">Why is psychology important?</h3>
@@ -16,12 +17,12 @@ const Psychology = () => {
                         <div className='card-main'>
                             <h3 align="center">Advantages of seeing a psychologist</h3>
                             <p>Imagine being able to dialogue and receive help without judging. The psychologist is a qualified professional, capable of listening to the patient in a neutral way, establishing a relationship based on respectful dialogue, with the aim of establishing mechanisms to develop their emotional state or solutions to reduce their mental suffering.</p>
-                            <a class="ov-btn-grow-ellipse" target="blank" href='https://mejorconsalud.as.com/7-motivos-ir-al-psicologo/'>More info</a>
-                        </div>
+                            <a class="ov-btn-grow-ellipse" target="blank" href='https://mejorconsalud.as.com/7-motivos-ir-al-psicologo/'>More info</a>                           
+                            </div>
                     </div>
                 </main>
                 <div className="sidebar">
-                    <h3 align="center">Important information</h3>
+                    <h3 align="center">EVENTS</h3>
                     <div className='card-side'>
                         <h3 align="center">October 10th. World Mental Health Day (WHO)</h3>
                         <p>Its objectives are to raise awareness in society about mental disorders, fight against the stigmatization suffered by affected people and promote initiatives that improve care.</p>
