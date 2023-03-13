@@ -4,26 +4,19 @@ import Form from 'react-bootstrap/Form';
 import migramind_sm from '../img/MigraMind1.png';
 import Search from '../img/Search.png';
 import { useNavigate } from 'react-router-dom';
-import Results from "../routes/results/Results";
 
 function Navigationbar() {
   const [input, setInput] = useState("");
-  const [getEvent, setGetEvent] = useState([])
   const navigate = useNavigate()
 
   async function handleSubmit(event) {
         event.preventDefault();
         try {
-          // const response = await fetch(`http://localhost:5001/searchEvent/?eventQuery=${input}`);
-          // const parseResponse = await response.json();
           navigate(`results?search=${input}`)
-          // console.log(parseResponse)
         } catch (err) {
           console.error(err);
         }
       }
-
-  
 
   return (
       <Navbar 
