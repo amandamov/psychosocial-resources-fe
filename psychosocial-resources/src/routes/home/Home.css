@@ -1,37 +1,8 @@
-
-.home {
-   text-align: center;
-}
-.header_img{
-   background-color: #8ca1ab;
-   opacity: 0.7;
-}
-/* GROW ELLIPSE BUTTON STYLES */
-.ov-btn-grow-ellipse {
-  background: #fff;
-  color: #61dafb;
-  border: 2px solid #61dafb;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 500px;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.titulo {
-   margin-top: 100px;
-   color: #A2D6E8;
-     font: normal 80px Varela Round, sans-serif;
-     height: 100px;
-     left: auto;
-     letter-spacing: 10px;
-     text-align: center;
-     text-transform: uppercase;
-     width: 100%;
-     animation: move linear 1000ms infinite;
-     z-index: 2  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system;
 }
 
 .titulo{
@@ -41,6 +12,27 @@
    align-items: center;
    justify-content: space-around;
 
+}
+
+.container-home {
+  margin: 5%;
+}
+
+.migramind > img {
+  max-width: 40%;
+    height: 100%;
+}
+
+.migracode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.migracode>h3 {
+  padding-left: 5%;
+  text-align: justify;
+  line-height: 1.6;
 }
 
 .animated-shadow {
@@ -55,86 +47,6 @@
      animation: move linear 2000ms infinite;
      z-index: 2
    }
-   /*Animación para rotar las sombras*/
-@keyframes move {
-  0% {
-    text-shadow:
-      4px -4px 0 #878385,
-      3px -3px 0 #878385,
-      2px -2px 0 #878385,
-      1px -1px 0 #878385,
-      -4px 4px 0 #13f1fc,
-      -3px 3px 0 #13f1fc,
-      -2px 2px 0 #13f1fc,
-      -1px 1px 0 #13f1fc
-    ;
-  }
-
-  25% {
-    text-shadow:
-      -4px -4px 0 #13f1fc,
-      -3px -3px 0 #13f1fc,
-      -2px -2px 0 #13f1fc,
-      -1px -1px 0 #13f1fc,
-      4px 4px 0 #878385,
-      3px 3px 0 #878385,
-      2px 2px 0 #878385,
-      1px 1px 0 #878385
-    ;
-  }
-  50% {
-    text-shadow:
-      -4px 4px 0 #878385,
-      -3px 3px 0 #878385,
-      -2px 2px 0 #878385,
-      -1px 1px 0 #878385,
-      4px -4px 0 #13f1fc,
-      3px -3px 0 #13f1fc,
-      2px -2px 0 #13f1fc,
-      1px -1px 0 #13f1fc
-    ;
-  }
-
-  75% {
-    text-shadow:
-      4px 4px 0 #13f1fc,
-      3px 3px 0 #13f1fc,
-      2px 2px 0 #13f1fc,
-      1px 1px 0 #13f1fc,
-      -4px -4px 0 #878385,
-      -3px -3px 0 #878385,
-      -2px -2px 0 #878385,
-      -1px -1px 0 #878385
-    ;
-  }
-  100% {
-    text-shadow:
-      4px -4px 0 #878385,
-      3px -3px 0 #da0641,
-      2px -2px 0 #da0641,
-      1px -1px 0 #da0641,
-      -4px 4px 0 #13f1fc,
-      -3px 3px 0 #13f1fc,
-      -2px 2px 0 #13f1fc,
-      -1px 1px 0 #13f1fc
-    ;
-  }
-}
-
-
-.card {
-   box-shadow: 0 1px 10px;
-   border-radius: 1%;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   cursor: pointer;
-   transition: transform 200ms ease-in;
-   margin-bottom: 2rem;
-   margin-left: 2rem;
-   padding-bottom: 15px;
-}
-
 
 .card-body{
    height: rem;
@@ -144,9 +56,7 @@
 }
 
 .card-title{
-   padding: 1rem;
-   text-align: center;
-   font-size: medium;
+   font-size:large;
 }
 
 .card-text{
