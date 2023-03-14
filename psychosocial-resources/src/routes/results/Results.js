@@ -6,21 +6,19 @@ import { useSearchParams } from "react-router-dom";
 const Results = () => {
 
     const [event, setEvent] = useState([]);
-    // const input = useParams();
     const [searchParams, setSearchParams] = useSearchParams();
-    let input = searchParams.get('search')
-    console.log((input));
 
-    // console.log(input)
-    let inputFake = "babel"
+    const input = searchParams.get('search');
     
     useEffect(() => {
-        fetch(`http://localhost:5001/searchEvent/?eventQuery=${input}`)
+        const base = `http://localhost:5001/searchEvent/`
+        const url = input ? `${base}?eventQuery=${input}` : base
+        fetch(url)
         .then((result) => result.json())
         .then((data) => {
             setEvent(data)
         });
-    }, []);
+    }, [input]);
 
     return(
         <div><img
@@ -39,13 +37,11 @@ const Results = () => {
                 title={item.title}
                 provincie={item.provincie}
                 country={item.country}
-                //city={item.provincie}
                 id={item.id}
                 />)
             })}
             </div>
         </div>
-        <p>results page</p>
         </div>
     );
 }

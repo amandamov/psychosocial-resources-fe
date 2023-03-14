@@ -3,11 +3,14 @@ import { Nav, Navbar, NavLink } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 import migramind_sm from '../img/MigraMind1.png';
 import Search from '../img/Search.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 function Navigationbar() {
-  const [input, setInput] = useState("");
   const navigate = useNavigate()
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const search = searchParams.get('search') ?? ''
+  const [input, setInput] = useState(search);
 
   async function handleSubmit(event) {
         event.preventDefault();
