@@ -30,7 +30,7 @@ const Header = () => {
         />
         <Carousel.Caption className="description_img1">
           <h3>"If you're worried enough about a result, you'll probably do something to fix it"</h3>
-          <p>William James</p>
+          <p> William James</p>
            </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
