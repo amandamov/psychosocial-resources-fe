@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import MapView from "../../components/MapView";
 import './SingleEvent.css';
 
 
@@ -38,6 +39,7 @@ const SingleEvent = () => {
                         </div>
                         ) 
             })}
+            <MapView />
         </div>
     );
 }
