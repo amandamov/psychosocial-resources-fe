@@ -1,3 +1,4 @@
+import "./Results.css";
 import { useState, useEffect } from "react";
 import EventCard from "../../components/EventCard";
 import imagen6 from "../../img/salud_mental.jpg";
@@ -29,7 +30,8 @@ const Results = () => {
         
         <div class=" p-4 w-100">
         <div class=" row row-cols-1 row-cols-md-2  g-2">
-            {event.map(item => {
+            {console.log(event.length)}
+            {event.length > 0 ? event.map(item => {
                 return(
                 <EventCard key={item.id} 
                 img={item.code_photo}
@@ -39,7 +41,7 @@ const Results = () => {
                 country={item.country}
                 id={item.id}
                 />)
-            })}
+            }) : (<h1 id="h-not-found">Sorry. We did not find any events related to your search.</h1>)}
             </div>
         </div>
         </div>
