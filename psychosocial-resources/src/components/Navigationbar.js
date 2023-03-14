@@ -11,14 +11,19 @@ function Navigationbar() {
   const [searchParams, setSearchParams] = useSearchParams();
   const search = searchParams.get('search') ?? ''
   const [input, setInput] = useState(search);
-
+  
   async function handleSubmit(event) {
         event.preventDefault();
-        try {
-          navigate(`results?search=${input}`)
-        } catch (err) {
-          console.error(err);
+        if (input.length > 0) {
+          try {
+            navigate(`results?search=${input}`)
+          } catch (err) {
+            console.error(err);
+          }
+        } else {
+          alert("Please enter some text!")
         }
+        
       }
 
   return (
