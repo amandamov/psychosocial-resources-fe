@@ -1,0 +1,49 @@
+import { useState, useEffect } from "react";
+import EventCard from "../../components/EventCard";
+import imagen6 from "../../img/salud_mental.jpg";
+import { useSearchParams } from "react-router-dom";
+
+const Results = () => {
+
+    const [event, setEvent] = useState([]);
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    const input = searchParams.get('search');
+    
+    useEffect(() => {
+        const base = `http://localhost:5001/searchEvent/`
+        const url = input ? `${base}?eventQuery=${input}` : base
+        fetch(url)
+        .then((result) => result.json())
+        .then((data) => {
+            setEvent(data)
+        });
+    }, [input]);
+
+    return(
+        <div><img
+          className="d-block w-100"
+          src={imagen6}
+          alt="First slide"
+        />
+        
+        <div class=" p-4 w-100">
+        <div class=" row row-cols-1 row-cols-md-2  g-2">
+            {event.map(item => {
+                return(
+                <EventCard key={item.id} 
+                img={item.code_photo}
+                name={item.company}
+                title={item.title}
+                provincie={item.provincie}
+                country={item.country}
+                id={item.id}
+                />)
+            })}
+            </div>
+        </div>
+        </div>
+    );
+}
+
+export default Results;

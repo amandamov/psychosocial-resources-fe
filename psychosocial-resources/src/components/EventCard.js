@@ -10,9 +10,6 @@ const EventCard = (props) => {
     navigate(`${props.id}`)
     }
 
-    // const dateFormatDb = props.date;
-    // const dateFormated = moment(dateFormatDb).format('DD/MM/YYYY');
-
     return (
         <><div className="card_event col-md-5" key={props.id}>
             <div className="card_body">
@@ -23,7 +20,6 @@ const EventCard = (props) => {
                 <h4 className="card_title">{props.title}</h4>
                 <div className="city_date_time">
                     <h2>{props.provincie} - {props.country}</h2>
-                    {/* <p>{dateFormated} - {props.time}</p> */}
                 </div>
             </div>
         </div>
