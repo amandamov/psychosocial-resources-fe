@@ -31,7 +31,7 @@ function Navigationbar() {
       collapseOnSelect
       expand="sm"
       variant="light"
-      className="color-nav"
+      className="color-nav fixed-top"
     >
       <Navbar.Brand href="/">
         <img src={migramind_sm} width="50" heigth="30"/>
