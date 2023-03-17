@@ -8,7 +8,7 @@ function Footer() {
   return (
      <div className="container-footer">
   	 	<div className="row-footer" >
-		   <div className="logos-footer">
+		   <div className="footer-col">
 				<img className="union-logo" src={Union} style={{width: "250px", height: "55px",}}/>
 				<img className="integrate-logo" src={Integrate} style={{width: "150px", height: "65px",}}/>
 			</div>

@@ -38,6 +38,16 @@ const Maps = () => {
                                 <Marker position={[item.latitud, item.longitud]} icon={icon}>
                                     <Popup>
                                         {item.company}
+                                        <br/>
+                                        {item.address}
+                                        <br/>
+                                        {item.provincie}-{item.country}
+                                        <br/>
+                                        {item.phone}
+                                        <br/>
+                                        <a target="_blank" href={item.url_basic}>{item.url_basic}</a>
+                                        <br/>
+                                        Email: {item.email}
                                     </Popup>
                                 </Marker>
                                 <LocationMarker />

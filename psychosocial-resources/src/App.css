@@ -1,5 +1,5 @@
 body{
-  padding-top: 70px;
+  padding-top: 64px;
 }
 
 .App {
@@ -46,7 +46,7 @@ body{
 }
 
 .header_img {
-
+ object-fit: fill;
   opacity: 0.7;
 }
 
@@ -100,9 +100,9 @@ body{
 
 /* GROW ELLIPSE BUTTON STYLES */
 .ov-btn-grow-ellipse {
-  background: #fff;
-  color: #61dafb;
-  border: 2px solid #61dafb;
+  background-color: #61dafb;
+  color: #ffffff;
+  border: 2px solid ;
   padding: 1rem;
   margin: 1rem;
   border-radius: 500px;
@@ -111,32 +111,6 @@ body{
   overflow: hidden;
   display: inline-block;
 }
-
-.ov-btn-grow-ellipse:hover {
-  color: #fff;
-}
-
-.ov-btn-grow-ellipse::after {
-  content: "";
-  background: #61dafb;
-  position: absolute;
-  z-index: -1;
-  padding: 16px 20px;
-  display: block;
-  border-radius: 50%;
-  left: -50%;
-  right: -50%;
-  top: -150%;
-  bottom: -150%;
-  transform: scale(0, 0);
-  transition: all 0.4s ease;
-}
-
-.ov-btn-grow-ellipse:hover::after {
-  transition: all 0.6s ease-out;
-  transform: scale(1, 1);
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -184,10 +158,6 @@ body{
   padding: 20px 0;
   flex-wrap: nowrap;
   margin: 38px 0 38px 0;
-}
-
-.logos-footer {
-
 }
 
 .integrate-logo {
@@ -311,6 +281,9 @@ ul{
 
 /*Map CSS*/
 .leaflet-container {
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
   width: 60vw;
   height: 60vh;
 }
