@@ -30,7 +30,6 @@ const Results = () => {
         
         <div class=" p-4 w-100">
         <div class=" row row-cols-1 row-cols-md-2  g-2">
-            {console.log(event.length)}
             {event.length > 0 ? event.map(item => {
                 return(
                 <EventCard key={item.id} 

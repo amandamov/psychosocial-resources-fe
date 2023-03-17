@@ -38,8 +38,8 @@ const SingleEvent = () => {
                             <p>{item.attencion_schedule}</p>
                         </div>
                         ) 
-            })}
-            <Maps />
+                    })}
+                    <Maps />
         </div>
     );
 }

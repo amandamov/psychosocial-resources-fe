@@ -3,6 +3,9 @@ import {MapContainer, Marker, Popup, TileLayer} from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import LocationMarker from './LocationMaker';
+import { useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
+
 
 const icon = L.icon({
     iconUrl: require("../img/icon-location.png"),
@@ -10,19 +13,40 @@ const icon = L.icon({
     iconSize: [30, 30],
 });
 
-export default function Maps() {
+const Maps = () => {
+
+    const [info, setInfo] = useState([]);
+    const infoId = useParams();
+    
+    useEffect(() => {
+        fetch(`http://localhost:5001/getHelp/${infoId.id}`)
+        .then((result) => result.json())
+        .then((data) => {
+          setInfo(data);
+        });
+    }, []);
     return (
-        <MapContainer center={[41.3858, 2.1301]} zoom={13} scrollWheelZoom={false}>
-          <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={[41.3858, 2.1301]} icon={icon}>
-              <Popup>
-                  Ajuntament de BCN
-              </Popup>
-          </Marker>
-          <LocationMarker />
-        </MapContainer>
-    )
-} 
+        info.map( (item) => {
+            return item.latitud && item.longitud != null ?
+                info.map((item) => {
+                    return (
+                        <>
+                            <MapContainer center={[item.latitud, item.longitud]} zoom={13} scrollWheelZoom={false}>
+                                <TileLayer
+                                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                                <Marker position={[item.latitud, item.longitud]} icon={icon}>
+                                    <Popup>
+                                        {item.company}
+                                    </Popup>
+                                </Marker>
+                                <LocationMarker />
+                            </MapContainer>
+                            <p>Click the map to show a marker at your detected location</p>
+                        </>
+                    );
+                }) : (<h1>ONLINE</h1>);
+        })
+)}; 
+
+export default Maps;
