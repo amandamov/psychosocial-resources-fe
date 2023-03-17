@@ -12,36 +12,29 @@ function Footer() {
 				<img className="union-logo" src={Union} style={{width: "250px", height: "55px",}}/>
 				<img className="integrate-logo" src={Integrate} style={{width: "150px", height: "65px",}}/>
 			</div>
-  	 		<div className="footer-col">
-  	 			<h4>The team</h4>
-  	 			<ul>
-  	 				<li><a href="#">About us</a></li>
-  	 				<li><a href="#">Our program</a></li>
-  	 				<li><a href="#">Support us</a></li>
-  	 			</ul>
-  	 		</div>
+  	 		
   	 		<div className="footer-col">
   	 			<h4>Get info</h4>
   	 			<ul>
-  	 				<li><a href="#">Events</a></li>
-  	 				<li><a href="#">News</a></li>
-  	 				<li><a href="#">Get help</a></li>
+  	 				<li><a href="/events">Events</a></li>
+  	 				<li><a href="/psychology">Psychology</a></li>
+					   <li><a href="/about">About us</a></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>Contact Us</h4>
   	 			<ul>
-  	 				<li><a href="#"><i class="fab fa-whatsapp"></i> +3212434355</a></li>
-  	 				<li><a href="#">Email: migramind@hotmail.com</a></li>
-  	 				<li><a href="#">Address: Calle fetyt 56, Barcelona</a></li>
+  	 				<li><i class="fab fa-whatsapp"></i> 633441511</li>
+  	 				<li>Email: info@openculturalcenter.org</li>
+  	 				<li><a href="https://goo.gl/maps/Pr8kg352namjT4V37">Address: Carrer del Rec 27, 08003, Barcelona</a></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>follow us</h4>
   	 			<div className="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="https://www.facebook.com/OpenCulturalCenter/"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="https://twitter.com/occ_project?lang=en"><i class="fab fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com/openculturalcenter/?hl=en"><i class="fab fa-instagram"></i></a>
   	 			</div>
   	 		</div>
   	 	</div>
