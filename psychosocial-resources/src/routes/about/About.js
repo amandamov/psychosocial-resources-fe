@@ -4,7 +4,7 @@ import Amanda from "../../img/amanda.jpeg"
 import Elimar from "../../img/elimar.jpeg"
 import Laura from "../../img/laura.jpeg"
 import Nuno from "../../img/nuno.jpg"
-import Avataro from "../../img/avataro.jpeg"
+import Oswaldo from "../../img/OSWALDO.jpg"
 import Portrait from "../../components/Portrait";
 
 const About = () => {
@@ -23,7 +23,7 @@ const About = () => {
                 <Portrait photo={Elimar} name={"Elimar Finol"}/>
                 <Portrait photo={Laura} name={"Laura Garcia"}/>
                 <Portrait photo={Nuno} name={"Nuno Luís"}/>
-                <Portrait photo={Avataro} name={"Oswaldo Viloria"}/>
+                <Portrait photo={Oswaldo} name={"Oswaldo Viloria"}/>
             </div>
         </div>
 
