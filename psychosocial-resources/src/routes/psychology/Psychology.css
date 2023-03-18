@@ -48,9 +48,9 @@
 }
 /* GROW ELLIPSE BUTTON STYLES */
 .ov-btn-grow-ellipse {
-    background: #fff;
-    color: #61dafb;
-    border: 2px solid #61dafb;
+    background-color: #61dafb;
+    color: #ffffff;
+    border: 2px solid;
     padding: 1rem;
     margin: 1rem;
     border-radius: 500px;

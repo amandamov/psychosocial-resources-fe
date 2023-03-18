@@ -22,20 +22,14 @@ const SingleEvent = () => {
             {moreInfo.map(item => {
                     return( 
                         <div key={item.id}>
-                            <img src={item.code_photo}/>
-                            <h1>{item.company}</h1>
-                            <h2>{item.title}</h2>
-                            <h3>{item.description}</h3>
-                            <p>{item.url_basic}</p>
-                            <p>{item.schedule_description}</p>
-                            <p>{item.url_schedule}</p>
-                            <p>{item.address}</p>
-                            <p>{item.provincie}</p>
-                            <p>{item.country}</p>
-                            <p>{item.email}</p>
-                            <p>{item.phone}</p>
-                            <p>{item.type_of_company}</p>
-                            <p>{item.attencion_schedule}</p>
+                            <h1 className="h1-single-event">{item.company}</h1>
+                            <hr/>
+                            <img className="img-single-event" src={item.code_photo}/>
+                            <h3 className="h3-single-event">{item.title}</h3>
+                            <p className="description-single-event">{item.description}</p>
+                            <p className="p-single-event">For specific help information,  <a target="_blank" href={item.url_schedule}>click here</a></p>
+                            <p className="p-single-event">{item.type_of_company}</p>
+                            <p className="p-single-event">{item.attention_schedule}</p>
                         </div>
                         ) 
                     })}

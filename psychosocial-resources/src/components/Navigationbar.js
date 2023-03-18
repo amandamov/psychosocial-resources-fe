@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Nav, Navbar, NavLink } from "react-bootstrap";
+import React, {  useState } from "react";
+import { Nav, Navbar } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
-import migramind_sm from '../img/MigraMind1.png';
+import MigraMind1 from '../img/MigraMind1.png';
+import MigramindHealth from '../img/MigramindHealth.png';
 import Search from '../img/Search.png';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
@@ -33,9 +34,9 @@ function Navigationbar() {
       variant="light"
       className="color-nav fixed-top"
     >
-      <Navbar.Brand href="/">
-        <img src={migramind_sm} width="50" heigth="30"/>
-        MigraMind</Navbar.Brand>
+      <Navbar.Brand href="/" >
+        <img src={MigramindHealth} width="160" heigth="30"/>
+</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav className="me-auto my-2 my-lg-0">
