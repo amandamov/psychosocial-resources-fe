@@ -1,32 +1,29 @@
 import "./AddEvents.css"
 import { useForm } from "react-hook-form"
-import { useEffect, useState } from "react";
+import { useCallback } from "react";
 
 
 function AddEvents() {
-    const { register, handleSubmit} = useForm();
-
-    const [post, setPost] = useState([])
-
-    useEffect(() => {
-       fetch(`http://localhost:5001/getHelp`,{
-            method : 'POST',
-            body: JSON.stringify(post),
-            headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-    },
-            
-        })   
-        .then((result) => result.json())
-        .then((data) => {
-            console.log(setPost(data));
-        });
+    const { register, handleSubmit, reset} = useForm();
     
-    })
+    const cachedFn = useCallback((data) => {
+    fetch(`http://localhost:5001/getHelp`,{
+            method : 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }, 
+        })   
+        .then(() => {
+            reset()
+            alert('event created')
+        })
+        
+    }, [])
     return (
         <div class="container ">
-            <form onSubmit={handleSubmit(setPost)}>
+            <form onSubmit={handleSubmit(cachedFn)}>
                 <div class="row g-3 m-2">
                     <div class="col-12">
                         <label for="companyInput" class="form-label">COMPANY</label>
