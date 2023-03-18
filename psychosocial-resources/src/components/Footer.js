@@ -32,9 +32,9 @@ function Footer() {
   	 		<div className="footer-col">
   	 			<h4>follow us</h4>
   	 			<div className="social-links">
-  	 				<a href="https://www.facebook.com/OpenCulturalCenter/"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="https://twitter.com/occ_project?lang=en"><i class="fab fa-twitter"></i></a>
-  	 				<a href="https://www.instagram.com/openculturalcenter/?hl=en"><i class="fab fa-instagram"></i></a>
+  	 				<a target="_blank" href="https://www.facebook.com/OpenCulturalCenter/"><i class="fab fa-facebook-f"></i></a>
+  	 				<a target="_blank" href="https://twitter.com/occ_project?lang=en"><i class="fab fa-twitter"></i></a>
+  	 				<a target="_blank" href="https://www.instagram.com/openculturalcenter/?hl=en"><i class="fab fa-instagram"></i></a>
   	 			</div>
   	 		</div>
   	 	</div>

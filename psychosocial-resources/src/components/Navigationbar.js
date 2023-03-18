@@ -48,7 +48,7 @@ function Navigationbar() {
         <Form className="d-flex" onSubmit={handleSubmit}>
                   <Form.Control 
                     type="search"
-                    placeholder=""
+                    placeholder="Search"
                     className="me-2"
                     aria-label="Search"
                     value={input}
