@@ -8,9 +8,10 @@ const SingleEvent = () => {
     
     const [moreInfo, setMoreInfo] = useState([]);
     const eventId = useParams();
+    const backend_url = process.env.REACT_APP_URL_BACKEND;
 
     useEffect(()=> {
-        fetch(`http://localhost:5001/getHelp/${eventId.id}`)
+        fetch(`${backend_url}/${eventId.id}`)
         .then((result) => result.json())
         .then((data) => {
         setMoreInfo(data);

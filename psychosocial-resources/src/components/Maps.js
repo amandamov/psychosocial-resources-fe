@@ -17,9 +17,10 @@ const Maps = () => {
 
     const [info, setInfo] = useState([]);
     const infoId = useParams();
+    const backend_url = process.env.REACT_APP_URL_BACKEND;
     
     useEffect(() => {
-        fetch(`http://localhost:5001/getHelp/${infoId.id}`)
+        fetch(`${backend_url}/${infoId.id}`)
         .then((result) => result.json())
         .then((data) => {
           setInfo(data);

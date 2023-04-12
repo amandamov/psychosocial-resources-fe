@@ -10,9 +10,10 @@ const Results = () => {
     const [searchParams, setSearchParams] = useSearchParams();
 
     const input = searchParams.get('search');
+    const backend_url = process.env.REACT_APP_URL_BACKEND;
     
     useEffect(() => {
-        const base = `http://localhost:5001/searchEvent/`
+        const base = `${backend_url}/searchEvent/`
         const url = input ? `${base}?eventQuery=${input}` : base
         fetch(url)
         .then((result) => result.json())

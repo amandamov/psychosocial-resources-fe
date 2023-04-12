@@ -6,9 +6,10 @@ import imagen6 from "../img/salud_mental.jpg";
 const RenderEventCard = () => {
 
     const [infoEvent, setInfoEvent] = useState([]);
+    const backend_url = process.env.REACT_APP_URL_BACKEND;
 
     useEffect(() => {
-        fetch(`http://localhost:5001/getHelp`)
+        fetch(`${backend_url}/getHelp`)
         .then((result) => result.json())
         .then((data) => {
           setInfoEvent(data);
@@ -20,7 +21,7 @@ const RenderEventCard = () => {
           className="d-block w-100"
           src={imagen6}
           alt="First slide"
-        />
+    />
         
         <div className=" p-4 w-100">
         <div className=" row row-cols-1 row-cols-md-2  g-2">
