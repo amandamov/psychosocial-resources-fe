@@ -6,7 +6,7 @@ import imagen6 from "../img/salud_mental.jpg";
 const RenderEventCard = () => {
 
     const [infoEvent, setInfoEvent] = useState([]);
-    const backend_url = process.env.REACT_APP_URL_BACKEND;
+    const backend_url = process.env.REACT_APP_URL_BACKEND ?? 'http://localhost:5001';
 
     useEffect(() => {
         fetch(`${backend_url}/getHelp`)
