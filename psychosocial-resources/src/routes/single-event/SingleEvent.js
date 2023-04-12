@@ -6,6 +6,7 @@ import './SingleEvent.css';
 
 const SingleEvent = () => {
     
+    
     const [moreInfo, setMoreInfo] = useState([]);
     const eventId = useParams();
     const backend_url = process.env.REACT_APP_URL_BACKEND ?? 'http://localhost:5001';
