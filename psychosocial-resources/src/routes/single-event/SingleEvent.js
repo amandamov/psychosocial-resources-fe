@@ -20,7 +20,6 @@ const SingleEvent = () => {
     }, [])
 
     return (
-        
         <div className="big-div">
             {moreInfo.map(item => {
                     return( 
